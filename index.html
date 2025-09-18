@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Nakul Dighe — Profile</title>
+        <style>
+            :root {
+                --bg: #0f1724;
+                --card: #0b1220;
+                --muted: #94a3b8;
+                --accent: #60a5fa;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                font-family:
+                    Inter,
+                    system-ui,
+                    -apple-system,
+                    Segoe UI,
+                    Roboto,
+                    "Helvetica Neue",
+                    Arial;
+                background: linear-gradient(180deg, var(--bg), #071029);
+                color: #e6eef8;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem;
+            }
+            .card {
+                background: linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.02),
+                    rgba(255, 255, 255, 0.01)
+                );
+                border: 1px solid rgba(255, 255, 255, 0.04);
+                padding: 1.6rem;
+                border-radius: 12px;
+                max-width: 540px;
+                width: 100%;
+                box-shadow: 0 8px 30px rgba(2, 6, 23, 0.7);
+            }
+            .heading {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+            }
+            .avatar {
+                width: 64px;
+                height: 64px;
+                border-radius: 12px;
+                background: linear-gradient(135deg, var(--accent), #7c3aed);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                color: #04263b;
+            }
+            h1 {
+                margin: 0;
+                font-size: 1.25rem;
+            }
+            p.lead {
+                margin: 8px 0 0;
+                color: var(--muted);
+            }
+            .chips {
+                margin-top: 1.1rem;
+                display: flex;
+                gap: 0.6rem;
+                flex-wrap: wrap;
+            }
+            .chip {
+                background: rgba(255, 255, 255, 0.02);
+                padding: 0.45rem 0.7rem;
+                border-radius: 999px;
+                border: 1px solid rgba(255, 255, 255, 0.03);
+                font-size: 0.9rem;
+            }
+            footer {
+                margin-top: 1.2rem;
+                color: var(--muted);
+                font-size: 0.85rem;
+            }
+            .kv {
+                display: flex;
+                gap: 0.6rem;
+                align-items: center;
+            }
+            .k {
+                color: var(--muted);
+                min-width: 110px;
+            }
+        </style>
+    </head>
+    <body>
+        <article
+            class="card"
+            role="article"
+            aria-label="Profile card for Nakul Dighe"
+        >
+            <header class="heading">
+                <div class="avatar" aria-hidden="true">ND</div>
+                <div>
+                    <h1>Nakul Dighe</h1>
+                    <p class="lead">Backend developer — AWS certified</p>
+                </div>
+            </header>
+
+            <section class="details" aria-labelledby="summary">
+                <div id="summary" style="margin-top: 1rem">
+                    <p>
+                        I build server-side systems and APIs. I hold
+                        <strong>2 AWS certifications</strong>.
+                    </p>
+                </div>
+
+                <div class="chips" aria-hidden="false">
+                    <div class="chip">Backend Developer</div>
+                    <div class="chip">AWS Certified (x2)</div>
+                    <div class="chip">MongoDB / Redis / Go</div>
+                </div>
+
+                <footer>
+                    <div class="kv">
+                        <span class="k">Location</span><span>India</span>
+                    </div>
+                    <div class="kv">
+                        <span class="k">Contact</span><span>—</span>
+                    </div>
+                </footer>
+            </section>
+        </article>
+    </body>
+</html>
